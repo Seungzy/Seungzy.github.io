@@ -1,0 +1,19 @@
+/* Shared custom styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.profile { margin: 0; }
+.room { font-size: 0.95rem; color: #6c757d; }
+.time { font-size: 0.95rem; color: #343a40; }
+.completed { text-decoration: line-through; color: #6c757d; }
+/* Make table captions stand out */
+caption { caption-side: top; font-weight: 600; margin-bottom: .5rem; }
+
+/* Small helpers */
+.lead { margin-top: .5rem; }
+
+/* Make sure navbar-brand is prominent */
+.navbar-brand { font-weight: 700; }
+
+.container { max-width: 900px; }
