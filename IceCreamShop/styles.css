@@ -117,10 +117,6 @@ main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -387,6 +383,7 @@ footer p {
     color: white;
     text-decoration: none;
 }
+
 
 
 
