@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment & Delivery - Serenity Scoops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo">🍦</div>
+            <h1>Serenity Scoops</h1>
+            <div class="auth-buttons">
+                <a href="profile.html" class="header-btn profile-btn">Profile</a>
+                <a href="login.html" class="header-btn login-btn">Login</a>
+                <a href="signup.html" class="header-btn signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-list">
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            <li><a href="ShoppingCart.html" class="nav-link order-link">🛒 Order Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="payment-delivery">
+            <h2>Payment & Delivery</h2>
+            <div class="payment-container">
+                <form id="paymentForm">
+                    <div class="form-section">
+                        <h3>Payment Method</h3>
+                        <label><input type="radio" name="payment" value="card" checked> Credit/Debit Card</label><br>
+                        <label><input type="radio" name="payment" value="paypal"> GCash</label>
+                    </div>
+                    <div id="cardDetails" class="form-section">
+                        <h3>Card Details</h3>
+                        <input type="text" placeholder="Card Number" required>
+                        <input type="text" placeholder="Expiry (MM/YY)" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+                    <div class="form-section">
+                        <h3>Delivery Option</h3>
+                        <label><input type="radio" name="delivery" value="standard" checked> Standard Delivery (Free)</label><br>
+                        <label><input type="radio" name="delivery" value="express"> Express Delivery (P 20)</label>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="ShoppingCart.html" class="btn">Back to Cart</a>
+                        <button type="submit" class="btn">Pay & Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Serenity Scoops. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

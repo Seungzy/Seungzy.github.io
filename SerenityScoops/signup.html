@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Serenity Scoops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo">🍦</div>
+            <h1>Serenity Scoops</h1>
+            <div class="auth-buttons">
+                <a href="login.html" class="header-btn login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            <li><a href="ShoppingCart.html" class="nav-link order-link">🛒 Order Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="signup">
+            <h2>Create Account</h2>
+            <form id="signupForm" class="auth-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address:</label>
+                    <input type="email" id="signup-email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" name="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="tel" id="mobile-number" name="mobileNumber" placeholder="(123) 456-7890" required>
+                </div>
+                <div class="form-group">
+                    <label for="home-address">Home Address:</label>
+                    <textarea id="home-address" name="homeAddress" placeholder="Enter your home address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+            <p class="auth-link">Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ice Cream Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
