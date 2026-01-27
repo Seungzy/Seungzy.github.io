@@ -1,0 +1,8 @@
+F1 - TECHNICAL 
+- Ice Cream Business
+
+TECHNICAL ACTIVITY 1
+- IceCreamShop
+
+F3 TECHNICAL (ADVANCED JAVASCRIPT)
+- SerenityScoops
