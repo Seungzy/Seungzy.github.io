@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Serenity Scoops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="logo"><img src="images/ice-cream-logo.png" alt="Serenity Scoops Logo"></div>
+            <h1>Serenity Scoops</h1>
+            <div class="auth-buttons">
+                <a href="profile.html" class="header-btn profile-btn">Profile</a>
+                <a href="login.html" class="header-btn login-btn">Login</a>
+                <a href="signup.html" class="header-btn signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-list">
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="catalog.html" class="nav-link">Catalog</a></li>
+            <li><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            <li><a href="ShoppingCart.html" class="nav-link order-link">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="transaction-confirmation">
+            <h2>Order Confirmed!</h2>
+            <p class="confirmation-message">Thank you for your order. Your e-receipt is below.</p>
+
+            <div class="receipt-container">
+                <div class="receipt-header">
+                    <h3>SERENITY SCOOPS</h3>
+                    <p>Order Receipt</p>
+                </div>
+
+                <div class="receipt-content">
+                    <div class="receipt-section">
+                        <h4>Order Information</h4>
+                        <p><strong>Order ID:</strong> <span id="orderId">#SS2026001</span></p>
+                        <p><strong>Date:</strong> <span id="orderDate"></span></p>
+                        <p><strong>Time:</strong> <span id="orderTime"></span></p>
+                    </div>
+
+                    <div class="receipt-section">
+                        <h4>Order Items</h4>
+                        <table class="receipt-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody id="receiptItems">
+                                <!-- in this section, items will be shown by javascript-->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="receipt-section receipt-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="receiptSubtotal">₱0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee:</span>
+                            <span id="receiptDeliveryFee">₱50.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total Amount:</span>
+                            <span id="receiptTotal">₱0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="receipt-footer">
+                        <p>Thank you for your transaction. We hope you enjoy your order!</p>
+                        <p>For inquiries, please contact us at support@serenityscoops.com</p>
+                    </div>
+                </div>
+
+                <div class="receipt-actions">
+                    <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Serenity Scoops. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
