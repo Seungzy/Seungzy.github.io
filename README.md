@@ -5,4 +5,5 @@ TECHNICAL ACTIVITY 1
 - IceCreamShop
 
 F3 TECHNICAL (ADVANCED JAVASCRIPT)
-- SerenityScoops
+- SerenityScoops [Containing two added pages]
+- SerenityScoops_F3TECHNICAL [COMPLETE] [Containing four added pages]
